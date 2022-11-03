@@ -1,0 +1,57 @@
+html {
+    max-width: 600px;
+    background-color: black;
+    padding:20px;
+    margin: auto;
+}
+header {
+    border-top: 1px solid red !important;
+    padding-bottom: 5px;
+    text-align:center;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(28, 30, 33);
+}
+nav {
+    text-align: start !important;
+    color: red !important;
+}
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    margin: 30px;
+    text-align: center;
+    color: rgb(23, 132, 129);
+
+}
+p {
+    line-height: 1.4em;
+    color: lightblue;
+
+}
+table {
+    max-width: 600px;
+    border-top: 1px dotted red !important;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+#newsletter-input {
+    padding-top: 20px;
+    color:rgb(110, 191, 191)
+}
+.contact-info::after {
+    content: "\a";
+    white-space: pre;
+}
+.section-heading {
+    font-size: 1.5em;
+    font-family: cursive;
+}
+#posts {
+    font-size: 2em;
+    margin:auto;
+}
+
+.blog-post {
+    border-top: 1px dotted red !important;
+};
+
