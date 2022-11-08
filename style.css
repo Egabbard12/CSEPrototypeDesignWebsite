@@ -53,10 +53,10 @@ table {
 #Team-Members{
     display: flex;
     flex-direction: row; 
-    flex: 3 0 300px;
+    flex: 3 0 600px;
     min-width: 400px;
     gap: 10px;
-    align-items:flex-start;
+    align-items:center;
     list-style-type: none;
     
 }
