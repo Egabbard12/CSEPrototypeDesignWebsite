@@ -34,6 +34,9 @@ table {
     margin-right: auto;
 
 }
+img {
+    max-width: 400px;
+}
 #newsletter-input {
     padding-top: 20px;
     color:rgb(110, 191, 191)
@@ -76,10 +79,8 @@ table {
 #Minutes{
     list-style-type: none;
     text-align: center;
-    display: flex;
-    flex-wrap: wrap;
-    flex:50%;
-    gap: 10px;
+   
+    
    
 }
 
