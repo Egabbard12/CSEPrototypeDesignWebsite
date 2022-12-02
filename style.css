@@ -76,6 +76,10 @@ table {
 #Minutes{
     list-style-type: none;
     text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex:50%;
+    gap: 10px;
    
 }
 
