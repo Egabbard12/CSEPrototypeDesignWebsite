@@ -1,6 +1,6 @@
 html {
     max-width: 800px;
-    background-color: black;
+
     padding:20px;
     margin: auto;
 }
@@ -9,19 +9,31 @@ header {
     padding-bottom: 5px;
     text-align:center;
     font-family: 'Times New Roman', Times, serif;
-    background-color: rgb(28, 30, 33);
+    background-image: url(/img/Parchment.png);
 }
 nav {
     text-align: start !important;
     color: red !important;
 }
-body {
-    font-family:Arial, Helvetica, sans-serif;
-    margin: 30px;
-    text-align: center;
-    color: rgb(23, 132, 129);
 
+body {
+    background-color: #fdf5e6; /* Old Lace */
+    color: #5a3e36; /* Dark Brown text */
+    background-image: url('img\Parchment.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Georgia', serif; /* Classic font */
+    text-align: center;
+    margin: 30px;
 }
+
+h1, h2, h3, h4, h5, h6, p {
+    font-family: 'Georgia', serif;
+    color: #5a3e36; /* Dark Brown text */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
 p {
     line-height: 1.4em;
     color: lightblue;
