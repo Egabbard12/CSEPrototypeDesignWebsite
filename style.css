@@ -24,9 +24,8 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    background:  #fdf5e6;
+    background: #fdf5e6;
     padding: 1rem;
-    text-align: start !important;
     color: red !important;
 }
 
@@ -60,67 +59,58 @@ nav {
     margin: 4px;
 }
 
-.SRS {
-   display: flex;
-   cursor: pointer;
+/* Dropdown menu styles */
+.SRS, .dropdown {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
 }
 
 .dropdown {
     list-style: none;
     display: none;
-    
-    top: 100%;
-    left: 0;
-    
     padding: 0;
     margin: 0;
     z-index: 1;
 }
 
-.dropbtn{
+.dropbtn {
     background-color: transparent;
     border: none;
-    cursor: pointer;
     color: #5a3e36;
-    text-decoration: none;
     padding: 10px;
+    text-decoration: none;
     overflow: hidden;
 }
 
-.show{
+.show {
     display: flex;
     flex-direction: column;
-    .dropbtn{
-        border-bottom: #5a3e36;
-    }
 }
-.SRS{
-    display: flex;
-    flex-direction: column;
+
+.show .dropbtn {
+    border-bottom: 1px solid #5a3e36;
 }
 
 /* Responsive styles for screens smaller than 768px */
 @media (max-width: 768px) {
     nav {
-        display: flexbox;
-        background: none;
         flex-direction: column;
+        background: none;
     }
+
     .nav-links {
         flex-direction: column;
-        
         background: white;
-        
         align-items: center;
         max-height: 0;
         overflow: hidden;
     }
 
-    .nav-links.active{
+    .nav-links.active {
         display: flex;
         max-height: 500px;
     }
-   
 
     .nav-links li {
         justify-content: center;
@@ -202,8 +192,6 @@ table {
     border-top: 1px dotted red !important;
 }
 
-a{
+a {
     color: #5a3e36;
-
 }
-
