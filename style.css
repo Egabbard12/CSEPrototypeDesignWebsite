@@ -1,102 +1,209 @@
-html {
-    max-width: 800px;
-
-    padding:20px;
+/* Global styles */
+html, body {
+    padding: 20px;
     margin: auto;
-}
-header {
-    border-top: 1px solid red !important;
-    padding-bottom: 5px;
-    text-align:center;
-    font-family: 'Times New Roman', Times, serif;
-    background-image: url(/img/Parchment.png);
-}
-nav {
-    text-align: start !important;
-    color: red !important;
-}
-
-body {
     background-color: #fdf5e6; /* Old Lace */
     color: #5a3e36; /* Dark Brown text */
-    background-image: url('img\Parchment.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     font-family: 'Georgia', serif; /* Classic font */
     text-align: center;
-    margin: 30px;
+    background-image: url('/img/Parchment.png');
 }
 
+/* Header styles */
+header {
+    padding-bottom: 5px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Navigation bar styles */
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:  #fdf5e6;
+    padding: 1rem;
+    text-align: start !important;
+    color: red !important;
+}
+
+/* Navigation links styles */
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 1rem;
+    position: relative; /* Helps with dropdown positioning */
+}
+
+.nav-links a {
+    text-decoration: none;
+}
+
+/* Menu icon styles for mobile */
+.menu-icon {
+    display: none;
+    position: relative;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-icon span {
+    background: #5a3e36;
+    height: 3px;
+    width: 25px;
+    margin: 4px;
+}
+
+.SRS {
+   display: flex;
+   cursor: pointer;
+}
+
+.dropdown {
+    list-style: none;
+    display: none;
+    
+    top: 100%;
+    left: 0;
+    
+    padding: 0;
+    margin: 0;
+    z-index: 1;
+}
+
+.dropbtn{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: #5a3e36;
+    text-decoration: none;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.show{
+    display: flex;
+    flex-direction: column;
+    .dropbtn{
+        border-bottom: #5a3e36;
+    }
+}
+.SRS{
+    display: flex;
+    flex-direction: column;
+}
+
+/* Responsive styles for screens smaller than 768px */
+@media (max-width: 768px) {
+    nav {
+        display: flexbox;
+        background: none;
+        flex-direction: column;
+    }
+    .nav-links {
+        flex-direction: column;
+        
+        background: white;
+        
+        align-items: center;
+        max-height: 0;
+        overflow: hidden;
+    }
+
+    .nav-links.active{
+        display: flex;
+        max-height: 500px;
+    }
+   
+
+    .nav-links li {
+        justify-content: center;
+        margin: 1rem 0;
+    }
+
+    .menu-icon {
+        display: inline-flex;
+        flex-direction: column;
+        z-index: 2; /* Ensure it appears above other elements */
+    }
+}
+
+/* Text element styles */
 h1, h2, h3, h4, h5, h6, p {
-    font-family: 'Georgia', serif;
     color: #5a3e36; /* Dark Brown text */
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
 p {
     line-height: 1.4em;
-    color: lightblue;
-
+    color: #5a3e36;
 }
+
+/* Table styles */
 table {
     max-width: 600px;
     border-top: 1px dotted red !important;
     margin-left: auto;
     margin-right: auto;
+}
 
-}
-img {
-    max-width: 400px;
-}
+/* Newsletter input styles */
 #newsletter-input {
     padding-top: 20px;
-    color:rgb(110, 191, 191)
+    color: #5a3e36;
 }
+
+/* Contact info pseudo-element */
 .contact-info::after {
     content: "\a";
     white-space: pre;
 }
+
+/* Section heading styles */
 .section-heading {
     font-size: 1.5em;
     font-family: cursive;
 }
+
+/* Post styles */
 #posts {
     font-size: 2em;
-    margin:auto;
-}
-.top{
-    display: flex;
-    
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    list-style-type: none;
-    height: 100;
-    max-width: 300px;
     margin: auto;
-}
-#Team-Members{
-    display: flex;
-    flex-direction: row; 
-    flex: 3 0 600px;
-    max-width: 400px;
-    gap: 10px;
-    justify-content:center;
-    list-style-type: none;
-    align-items: center;
-    margin: auto;
-    
-}
-#Minutes{
-    list-style-type: none;
-    text-align: center;
-   
-    
-   
 }
 
+/* Team members section styles */
+#Team-Members {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    justify-content: center;
+    list-style-type: none;
+    align-items: center;
+    margin: auto;
+    transition: transform 0.2s;
+}
+
+/* Minutes section styles */
+#Minutes {
+    list-style-type: none;
+    text-align: center;
+}
+
+/* Blog post styles */
 .blog-post {
     border-top: 1px dotted red !important;
-};
+}
+
+a{
+    color: #5a3e36;
+
+}
 
