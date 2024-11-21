@@ -7,7 +7,6 @@ html, body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     font-family: 'Georgia', serif; /* Classic font */
-    font-size: 22px;
     text-align: center;
     background-image: url('./img/Parchment2.png');
 }
@@ -27,15 +26,16 @@ h1 {
 }
 
 h2 {
-    padding-top: 50px;
-    font-family: 'Lexend Deca';font-size: 22px;
+    
+    font-family: 'Lexend Deca';
     font-size: 30px;
     color: #5a3e36;
 }
 
 .description{
-   border-radius: 25px;
+   border-radius: 25%;
    padding: 70px;
+   font-size: 22px;
    color: #5a3e36;
    background: #fdf5e6;
    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -48,9 +48,9 @@ nav {
     justify-content: center;
     align-items: center;
     background: #fdf5e6;
-
     padding: 1rem;
     color: red !important;
+    font-size: 18px;
 }
 
 /* Navigation links styles */
@@ -88,6 +88,8 @@ nav {
     display: flex;
     flex-direction: column;
     cursor: pointer;
+    position: relative;
+    font-size: 15px;
 }
 
 .dropdown {
@@ -102,9 +104,9 @@ nav {
     background-color: transparent;
     border: none;
     color: #5a3e36;
-    padding: 10px;
     text-decoration: none;
     overflow: hidden;
+    font-size: 18px;
 }
 
 .show {
@@ -229,4 +231,14 @@ table {
 
 a {
     color: #5a3e36;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10em;
+    min-width: 350px;
+    
 }
