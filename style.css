@@ -1,30 +1,54 @@
 /* Global styles */
 html, body {
-    padding: 20px;
+    
     margin: auto;
     background-color: #fdf5e6; /* Old Lace */
-    color: #5a3e36; /* Dark Brown text */
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     font-family: 'Georgia', serif; /* Classic font */
+    font-size: 22px;
     text-align: center;
-    background-image: url('./img/Parchment.png');
+    background-image: url('./img/Parchment2.png');
 }
 
 /* Header styles */
 header {
     padding-bottom: 5px;
-    text-align: center;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Oswald';font-size: 40px;
+    color: #5a3e36;
+    
+}
+
+h1 {
+    display: inline-block;
+    padding: 10px;
+    
+}
+
+h2 {
+    padding-top: 50px;
+    font-family: 'Lexend Deca';font-size: 22px;
+    font-size: 30px;
+    color: #5a3e36;
+}
+
+.description{
+   border-radius: 25px;
+   padding: 70px;
+   color: #5a3e36;
+   background: #fdf5e6;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Navigation bar styles */
 nav {
+    color: #5a3e36;
     display: flex;
     justify-content: center;
     align-items: center;
     background: #fdf5e6;
+
     padding: 1rem;
     color: red !important;
 }
@@ -125,13 +149,13 @@ nav {
 }
 
 /* Text element styles */
-h1, h2, h3, h4, h5, h6, p {
+h2, h3, h4, h5, h6, p {
     color: #5a3e36; /* Dark Brown text */
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
 p {
-    line-height: 1.4em;
+    line-height: 1.8em;
     color: #5a3e36;
 }
 
@@ -171,14 +195,25 @@ table {
 #Team-Members {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     justify-content: center;
     list-style-type: none;
     align-items: center;
-    margin: auto;
     transition: transform 0.2s;
+    padding: 10px;
+    padding-bottom: 60px;
+    background: #1e1c34;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.position { 
+   font-weight: bold;
+   color: #fdf5e6;
+}
+
+.name {
+   color: #15b8ff;
 }
 
 /* Minutes section styles */
